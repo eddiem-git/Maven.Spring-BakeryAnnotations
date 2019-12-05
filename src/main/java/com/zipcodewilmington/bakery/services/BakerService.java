@@ -2,10 +2,14 @@ package com.zipcodewilmington.bakery.services;
 
 import com.zipcodewilmington.bakery.models.Baker;
 import com.zipcodewilmington.bakery.repositories.BakerRepository;
+import org.springframework.stereotype.Service;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Service
 public class BakerService {
     private BakerRepository repository;
-
     public BakerService(BakerRepository repository) {
         this.repository = repository;
     }
